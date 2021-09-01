@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{prod_n.name}}</title>
+</head>
+<body>
+    <h1>{{prod_n.name}}</h1>
+    <table border="1">
+
+      <tr>
+        <th>id</th>
+        <td><center>{{prod_n.id}}</a></td>
+        </tr>
+      <tr>
+        <th>Название продукта</th>
+        <td><center>{{prod_n.name}}</a></td>
+      </tr>
+      <tr>
+        <th>Цена</th>
+        <td><center>{{prod_n.price}}</a></td>
+      </tr>
+      <tr>
+        <th>Количество</th>
+        <td><center>{{prod_n.amount}}</a></td>
+      </tr>
+      <tr>
+        <th>Комментарий</th>
+        <td><center>{{prod_n.comment}}</a></td>
+      </tr>
+    </table>
+<a href="/create_product">Добавить</a>
+<a href="/products/{{prod_n.id}}/del">Удалить</a>
+<a href="/products/{{prod_n.id}}/update">Редактировать</a>
+
+
+</body>
+</html>
